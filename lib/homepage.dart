@@ -2,6 +2,9 @@ import 'package:flutter/material.dart';
 import 'firstpage.dart';
 
 class HomePage extends StatelessWidget {
+  const HomePage({
+    Key? key,
+  }) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -30,8 +33,8 @@ class HomePage extends StatelessWidget {
         padding: const EdgeInsets.all(2.0),
         child: ElevatedButton(
           onPressed: () {
-            Navigator.push(
-                context, MaterialPageRoute(builder: (context) => FirstPage()));
+            //Navigator.push(
+            //context, MaterialPageRoute(builder: (context) => FirstPage()));
           },
           child: Text(buttonText),
         ),
