@@ -18,7 +18,6 @@ class HomePage extends StatelessWidget {
                 MaterialPageRoute(
                     // （2） 実際に表示するページ(ウィジェット)を指定する
                     builder: (context) => FirstPage()));
-            child:
             Image.asset('images/北海道地域別.jpg');
             //child: TextButton(
             //child: Text("ツアーを選ぶ"),
