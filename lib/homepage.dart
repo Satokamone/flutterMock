@@ -9,17 +9,28 @@ class HomePage extends StatelessWidget {
         title: Text("地域一覧"),
       ),
       body: Center(
-        child: Image.asset('images/北海道地域別.jpg'),
-        //child: TextButton(
-        //child: Text("ツアーを選ぶ"),
-        //onPressed: () {
-        // （1） 指定した画面に遷移する
-        //Navigator.push(
-        //context,
-        //MaterialPageRoute(
-        // （2） 実際に表示するページ(ウィジェット)を指定する
-        //builder: (context) => FirstPage()));
-        //},
+        child: TextButton(
+          child: Text("ツアーを選ぶ"),
+          onPressed: () {
+            // （1） 指定した画面に遷移する
+            Navigator.push(
+                context,
+                MaterialPageRoute(
+                    // （2） 実際に表示するページ(ウィジェット)を指定する
+                    builder: (context) => FirstPage()));
+            child:
+            Image.asset('images/北海道地域別.jpg');
+            //child: TextButton(
+            //child: Text("ツアーを選ぶ"),
+            //onPressed: () {
+            // （1） 指定した画面に遷移する
+            //Navigator.push(
+            //context,
+            //MaterialPageRoute(
+            // （2） 実際に表示するページ(ウィジェット)を指定する
+            //builder: (context) => FirstPage()));
+          }, //},
+        ),
       ),
       //),
     );
