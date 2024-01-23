@@ -9,14 +9,13 @@ class FirstPage extends StatelessWidget {
           title: Text("ツアー一覧"),
         ),
         body: Center(
-          child: Column(
-            children: <Widget>[
-              Image.asset('images/dounann.jpg'),
-              Image.asset('images/douou.jpg'),
-              Image.asset('images/douhoku.jpg'),
-              Image.asset('images/doutou.jpg'),
-            ],
-          ),
+            child: Column(
+          children: <Widget>[
+            Image.asset('images/dounann.jpg'),
+            Image.asset('images/douou.jpg'),
+            Image.asset('images/douhoku.jpg'),
+            Image.asset('images/doutou.jpg'),
+          ],
           child: TextButton(
             child: Text("日程を選ぶ"),
             onPressed: () {
@@ -28,6 +27,6 @@ class FirstPage extends StatelessWidget {
                       builder: (context) => Secondpage()));
             },
           ),
-        ));
+        )));
   }
 }
